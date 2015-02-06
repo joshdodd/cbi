@@ -4,6 +4,12 @@
 
 <div class="page-header">
 	<?php
+		global $post;
+		$parents = get_post_ancestors( $post->ID );
+		/* Get the ID of the 'top most' Page if not return current page ID */
+		$id = ($parents) ? $parents[count($parents)-1]: $post->ID;
+	?>
+	<?php
       $imageArray = get_field('page_banner_image');
       $imageAlt = $imageArray['alt'];
       $imageURL = $imageArray['sizes']['page-banner'];

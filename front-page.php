@@ -56,8 +56,8 @@
 
 	<div class="row home-row">
 		<div class="seven columns home-borders">
-			<div class="three columns alpha  home-borders-content"><?php the_field('bottom_left_content_left');?></div>
-			<div class="three columns omega offset-by-one home-borders-content"><?php the_field('bottom_left_content_right');?></div>
+			<div class="home-borders-content"><?php the_field('bottom_left_content_left');?></div>
+			<div class="home-borders-content right"><?php the_field('bottom_left_content_right');?></div>
 		</div>
 	
 		<div class="four columns offset-by-one home-connect">

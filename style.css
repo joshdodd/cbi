@@ -719,14 +719,18 @@ header.interior .interior-menu {
   color: #d1202f;
 }
 /* line 67, assets/sass/_layout.scss */
-.main-navigation ul li.current-menu-item {
-  background-color: white;
-}
-/* line 69, assets/sass/_layout.scss */
 .main-navigation ul li.current-menu-item a {
+  background-color: white;
   color: black;
+  display: inline;
 }
-/* line 75, assets/sass/_layout.scss */
+/* line 71, assets/sass/_layout.scss */
+.main-navigation ul li.current-menu-item a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  color: #d1202f;
+}
+/* line 80, assets/sass/_layout.scss */
 .main-navigation ul li ul {
   padding-top: 0;
   position: absolute;
@@ -738,7 +742,7 @@ header.interior .interior-menu {
 
 /* Homepage Slides
 ================================================== */
-/* line 99, assets/sass/_layout.scss */
+/* line 104, assets/sass/_layout.scss */
 .slider .rslides, .slider .homeslides {
   position: absolute;
   list-style: none;
@@ -750,7 +754,7 @@ header.interior .interior-menu {
   height: 800px;
   top: 0px;
 }
-/* line 111, assets/sass/_layout.scss */
+/* line 116, assets/sass/_layout.scss */
 .slider .rslides li, .slider .homeslides li {
   -webkit-backface-visibility: hidden;
   position: absolute;
@@ -761,19 +765,19 @@ header.interior .interior-menu {
   z-index: 1;
 }
 @media only screen and (max-width: 1240px) {
-  /* line 111, assets/sass/_layout.scss */
+  /* line 116, assets/sass/_layout.scss */
   .slider .rslides li, .slider .homeslides li {
     width: 1240px;
     height: 800px;
   }
 }
-/* line 125, assets/sass/_layout.scss */
+/* line 130, assets/sass/_layout.scss */
 .slider .rslides li:first-child, .slider .homeslides li:first-child {
   position: relative;
   display: block;
   float: left;
 }
-/* line 131, assets/sass/_layout.scss */
+/* line 136, assets/sass/_layout.scss */
 .slider .rslides img, .slider .homeslides img {
   display: block;
   height: auto;
@@ -782,13 +786,13 @@ header.interior .interior-menu {
   border: 0;
 }
 @media only screen and (max-width: 1240px) {
-  /* line 131, assets/sass/_layout.scss */
+  /* line 136, assets/sass/_layout.scss */
   .slider .rslides img, .slider .homeslides img {
     width: 1240px;
     height: 800px;
   }
 }
-/* line 145, assets/sass/_layout.scss */
+/* line 150, assets/sass/_layout.scss */
 .slider ul.rslides_tabs {
   list-style-type: none;
   width: 600px;
@@ -798,45 +802,45 @@ header.interior .interior-menu {
   z-index: 5;
   text-align: center;
 }
-/* line 155, assets/sass/_layout.scss */
+/* line 160, assets/sass/_layout.scss */
 .slider ul.rslides_tabs li {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 161, assets/sass/_layout.scss */
+/* line 166, assets/sass/_layout.scss */
 .slider ul.rslides_tabs li a {
   color: black;
 }
-/* line 163, assets/sass/_layout.scss */
+/* line 168, assets/sass/_layout.scss */
 .slider ul.rslides_tabs li a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 166, assets/sass/_layout.scss */
+/* line 171, assets/sass/_layout.scss */
 .slider ul.rslides_tabs li.rslides_here a {
   color: #d1202f;
 }
-/* line 168, assets/sass/_layout.scss */
+/* line 173, assets/sass/_layout.scss */
 .slider ul.rslides_tabs li.rslides_here a:hover, .slider ul.rslides_tabs li.rslides_here a:focus, .slider ul.rslides_tabs li.rslides_here a:active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 173, assets/sass/_layout.scss */
+/* line 178, assets/sass/_layout.scss */
 .slider a.rslides_nav {
   color: black;
   font-size: 40px;
 }
-/* line 175, assets/sass/_layout.scss */
+/* line 180, assets/sass/_layout.scss */
 .slider a.rslides_nav:hover {
   color: #d1202f;
 }
-/* line 177, assets/sass/_layout.scss */
+/* line 182, assets/sass/_layout.scss */
 .slider a.rslides_nav.prev {
   position: absolute;
   top: 730px;
   left: 10%;
 }
-/* line 178, assets/sass/_layout.scss */
+/* line 183, assets/sass/_layout.scss */
 .slider a.rslides_nav.next {
   position: absolute;
   top: 730px;
@@ -845,32 +849,32 @@ header.interior .interior-menu {
 
 /* Homepage Styles
 ================================================== */
-/* line 188, assets/sass/_layout.scss */
+/* line 193, assets/sass/_layout.scss */
 .home-row {
   margin-top: 50px;
 }
 
-/* line 192, assets/sass/_layout.scss */
+/* line 197, assets/sass/_layout.scss */
 .home-box {
   padding: 30px 50px;
 }
-/* line 194, assets/sass/_layout.scss */
+/* line 199, assets/sass/_layout.scss */
 .home-box .service-row {
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 198, assets/sass/_layout.scss */
+/* line 203, assets/sass/_layout.scss */
 .home-box .service-img {
   display: inline;
   padding-right: 30px;
 }
-/* line 202, assets/sass/_layout.scss */
+/* line 207, assets/sass/_layout.scss */
 .home-box .service {
   display: inline;
   position: relative;
   top: -20px;
 }
-/* line 206, assets/sass/_layout.scss */
+/* line 211, assets/sass/_layout.scss */
 .home-box .service a {
   color: white;
   font-family: "proxima-nova-condensed";
@@ -880,46 +884,53 @@ header.interior .interior-menu {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-/* line 215, assets/sass/_layout.scss */
+/* line 220, assets/sass/_layout.scss */
 .home-box .service a:hover {
   color: #d1202f;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 220, assets/sass/_layout.scss */
+/* line 225, assets/sass/_layout.scss */
 .home-borders {
   margin-top: 60px;
   border-top: 20px solid black;
   border-bottom: 20px solid black;
 }
-/* line 224, assets/sass/_layout.scss */
+/* line 229, assets/sass/_layout.scss */
 .home-borders .home-borders-content {
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 273px;
+  display: inline;
+  float: left;
 }
-/* line 227, assets/sass/_layout.scss */
+/* line 233, assets/sass/_layout.scss */
 .home-borders .home-borders-content img {
   margin: 0;
   padding: 0;
 }
-/* line 228, assets/sass/_layout.scss */
+/* line 234, assets/sass/_layout.scss */
 .home-borders .home-borders-content p {
   margin: 0;
 }
+/* line 237, assets/sass/_layout.scss */
+.home-borders .home-borders-content.right {
+  margin-left: 24px;
+}
 
-/* line 233, assets/sass/_layout.scss */
+/* line 245, assets/sass/_layout.scss */
 .home-connect {
   margin-top: 60px;
 }
-/* line 235, assets/sass/_layout.scss */
+/* line 247, assets/sass/_layout.scss */
 .home-connect .content-block-header {
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
   background: url("assets/img/stripes.png") repeat;
 }
-/* line 240, assets/sass/_layout.scss */
+/* line 252, assets/sass/_layout.scss */
 .home-connect .content-block-header h3 {
   background: black;
   margin: 0px 15px 0px 15px;
@@ -931,7 +942,7 @@ header.interior .interior-menu {
   line-height: 1.21;
   text-transform: uppercase;
 }
-/* line 253, assets/sass/_layout.scss */
+/* line 265, assets/sass/_layout.scss */
 .home-connect .social-icon {
   width: 90px;
   height: 90px;
@@ -940,22 +951,22 @@ header.interior .interior-menu {
   display: inline;
   float: left;
 }
-/* line 259, assets/sass/_layout.scss */
+/* line 271, assets/sass/_layout.scss */
 .home-connect .social-icon.first {
   margin-left: 0px;
 }
-/* line 260, assets/sass/_layout.scss */
+/* line 272, assets/sass/_layout.scss */
 .home-connect .social-icon a {
   color: white;
   font-size: 40px;
 }
-/* line 263, assets/sass/_layout.scss */
+/* line 275, assets/sass/_layout.scss */
 .home-connect .social-icon a:hover {
   color: #d1202f;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 267, assets/sass/_layout.scss */
+/* line 279, assets/sass/_layout.scss */
 .home-connect .social-icon a i {
   margin-top: 23px;
   margin-left: 26px;
@@ -963,7 +974,7 @@ header.interior .interior-menu {
 
 /* PAGE Styles
 ================================================== */
-/* line 283, assets/sass/_layout.scss */
+/* line 295, assets/sass/_layout.scss */
 .page-header {
   position: absolute;
   overflow: hidden;
@@ -975,13 +986,13 @@ header.interior .interior-menu {
   top: 0px;
 }
 @media only screen and (max-width: 1240px) {
-  /* line 283, assets/sass/_layout.scss */
+  /* line 295, assets/sass/_layout.scss */
   .page-header {
     width: 1240px;
     height: 800px;
   }
 }
-/* line 296, assets/sass/_layout.scss */
+/* line 308, assets/sass/_layout.scss */
 .page-header img {
   display: block;
   height: auto;
@@ -990,7 +1001,7 @@ header.interior .interior-menu {
   border: 0;
 }
 
-/* line 307, assets/sass/_layout.scss */
+/* line 319, assets/sass/_layout.scss */
 .page-title {
   width: 100%;
   padding-top: 18px;
@@ -1001,7 +1012,7 @@ header.interior .interior-menu {
   height: 54px;
   z-index: -1;
 }
-/* line 316, assets/sass/_layout.scss */
+/* line 328, assets/sass/_layout.scss */
 .page-title h1 {
   background: black;
   margin: 0px 0px 0px 0px;
@@ -1015,7 +1026,7 @@ header.interior .interior-menu {
   text-align: center;
 }
 
-/* line 330, assets/sass/_layout.scss */
+/* line 342, assets/sass/_layout.scss */
 .page-content {
   width: 100%;
   position: relative;
@@ -1023,112 +1034,112 @@ header.interior .interior-menu {
   z-index: 1;
   margin-bottom: -330px;
 }
-/* line 337, assets/sass/_layout.scss */
+/* line 349, assets/sass/_layout.scss */
 .page-content .breadcrumbs {
   margin: 10px 0 50px 0;
   text-align: right;
   font-size: 12px;
 }
-/* line 342, assets/sass/_layout.scss */
+/* line 354, assets/sass/_layout.scss */
 .page-content .breadcrumbs a {
   color: black;
 }
-/* line 344, assets/sass/_layout.scss */
+/* line 356, assets/sass/_layout.scss */
 .page-content .breadcrumbs a:hover {
   color: #d1202f;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 350, assets/sass/_layout.scss */
+/* line 362, assets/sass/_layout.scss */
 .page-content .breadcrumbs a:first-child {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 355, assets/sass/_layout.scss */
+/* line 367, assets/sass/_layout.scss */
 .page-content .breadcrumbs a:nth-child(3) {
   font-size: 12px;
   text-transform: uppercase;
 }
-/* line 360, assets/sass/_layout.scss */
+/* line 372, assets/sass/_layout.scss */
 .page-content .breadcrumbs a:nth-child(5) {
   font-size: 11px;
   text-transform: none;
 }
-/* line 365, assets/sass/_layout.scss */
+/* line 377, assets/sass/_layout.scss */
 .page-content .breadcrumbs i {
   padding: 0 3px 0 3px;
 }
-/* line 371, assets/sass/_layout.scss */
+/* line 383, assets/sass/_layout.scss */
 .page-content ul.subnav {
   list-style-type: none;
   margin: 0;
 }
-/* line 374, assets/sass/_layout.scss */
+/* line 386, assets/sass/_layout.scss */
 .page-content ul.subnav li {
   text-transform: uppercase;
   font-weight: bold;
   margin: 3px 0 2px 0;
 }
-/* line 379, assets/sass/_layout.scss */
+/* line 391, assets/sass/_layout.scss */
 .page-content ul.subnav li a {
   padding: 0 0 0 6px;
   color: black;
 }
-/* line 382, assets/sass/_layout.scss */
+/* line 394, assets/sass/_layout.scss */
 .page-content ul.subnav li a:hover {
   color: #d1202f;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 387, assets/sass/_layout.scss */
+/* line 399, assets/sass/_layout.scss */
 .page-content ul.subnav li ul {
   margin-left: 18px;
   list-style-type: none;
 }
-/* line 390, assets/sass/_layout.scss */
+/* line 402, assets/sass/_layout.scss */
 .page-content ul.subnav li ul li {
   text-transform: none;
 }
-/* line 392, assets/sass/_layout.scss */
+/* line 404, assets/sass/_layout.scss */
 .page-content ul.subnav li ul li.current_page_item {
   background-color: black;
 }
-/* line 394, assets/sass/_layout.scss */
+/* line 406, assets/sass/_layout.scss */
 .page-content ul.subnav li ul li.current_page_item a {
   color: white;
 }
-/* line 396, assets/sass/_layout.scss */
+/* line 408, assets/sass/_layout.scss */
 .page-content ul.subnav li ul li.current_page_item a:hover {
   color: #d1202f;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 406, assets/sass/_layout.scss */
+/* line 418, assets/sass/_layout.scss */
 .page-content ul.subnav > li.current_page_item {
   background-color: black;
 }
-/* line 408, assets/sass/_layout.scss */
+/* line 420, assets/sass/_layout.scss */
 .page-content ul.subnav > li.current_page_item a {
   color: white;
 }
-/* line 410, assets/sass/_layout.scss */
+/* line 422, assets/sass/_layout.scss */
 .page-content ul.subnav > li.current_page_item a:hover {
   color: #d1202f;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 415, assets/sass/_layout.scss */
+/* line 427, assets/sass/_layout.scss */
 .page-content ul.subnav > li.current_page_item ul {
   margin-left: 0px;
   background-color: white;
 }
-/* line 418, assets/sass/_layout.scss */
+/* line 430, assets/sass/_layout.scss */
 .page-content ul.subnav > li.current_page_item ul li a {
   color: black;
   margin-left: 18px;
 }
-/* line 421, assets/sass/_layout.scss */
+/* line 433, assets/sass/_layout.scss */
 .page-content ul.subnav > li.current_page_item ul li a:hover {
   color: #d1202f;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -1137,12 +1148,12 @@ header.interior .interior-menu {
 
 /* PAGE Slider
 ================================================== */
-/* line 441, assets/sass/_layout.scss */
+/* line 453, assets/sass/_layout.scss */
 .page-slider {
   margin-bottom: -40px;
 }
 
-/* line 445, assets/sass/_layout.scss */
+/* line 457, assets/sass/_layout.scss */
 .page-slides {
   position: relative;
   list-style: none;
@@ -1154,7 +1165,7 @@ header.interior .interior-menu {
   height: 400px;
 }
 
-/* line 457, assets/sass/_layout.scss */
+/* line 469, assets/sass/_layout.scss */
 .page-slides li {
   -webkit-backface-visibility: hidden;
   position: absolute;
@@ -1165,21 +1176,21 @@ header.interior .interior-menu {
   z-index: 1;
 }
 @media only screen and (max-width: 1240px) {
-  /* line 457, assets/sass/_layout.scss */
+  /* line 469, assets/sass/_layout.scss */
   .page-slides li {
     width: 1240px;
     height: 800px;
   }
 }
 
-/* line 471, assets/sass/_layout.scss */
+/* line 483, assets/sass/_layout.scss */
 .page-slides li:first-child {
   position: relative;
   display: block;
   float: left;
 }
 
-/* line 477, assets/sass/_layout.scss */
+/* line 489, assets/sass/_layout.scss */
 .page-slides img {
   display: block;
   height: auto;
@@ -1188,7 +1199,7 @@ header.interior .interior-menu {
   border: 0;
 }
 
-/* line 485, assets/sass/_layout.scss */
+/* line 497, assets/sass/_layout.scss */
 ul.rslides_tabs {
   list-style-type: none;
   width: 600px;
@@ -1196,57 +1207,57 @@ ul.rslides_tabs {
   top: -85px;
   text-align: center;
 }
-/* line 493, assets/sass/_layout.scss */
+/* line 505, assets/sass/_layout.scss */
 ul.rslides_tabs li {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 499, assets/sass/_layout.scss */
+/* line 511, assets/sass/_layout.scss */
 ul.rslides_tabs li a {
   color: black;
 }
-/* line 501, assets/sass/_layout.scss */
+/* line 513, assets/sass/_layout.scss */
 ul.rslides_tabs li a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 504, assets/sass/_layout.scss */
+/* line 516, assets/sass/_layout.scss */
 ul.rslides_tabs li.rslides_here a {
   color: #d1202f;
 }
-/* line 506, assets/sass/_layout.scss */
+/* line 518, assets/sass/_layout.scss */
 ul.rslides_tabs li.rslides_here a:hover, ul.rslides_tabs li.rslides_here a:focus, ul.rslides_tabs li.rslides_here a:active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 511, assets/sass/_layout.scss */
+/* line 523, assets/sass/_layout.scss */
 a.rslides_nav {
   color: black;
   font-size: 40px;
 }
-/* line 513, assets/sass/_layout.scss */
+/* line 525, assets/sass/_layout.scss */
 a.rslides_nav:hover {
   color: #d1202f;
 }
-/* line 515, assets/sass/_layout.scss */
+/* line 527, assets/sass/_layout.scss */
 a.rslides_nav.prev {
   position: relative;
   top: -220px;
   left: 20px;
 }
-/* line 516, assets/sass/_layout.scss */
+/* line 528, assets/sass/_layout.scss */
 a.rslides_nav.next {
   position: relative;
   top: -220px;
   left: 600px;
 }
 
-/* line 519, assets/sass/_layout.scss */
+/* line 531, assets/sass/_layout.scss */
 .landing-block {
   margin-bottom: 25px;
 }
-/* line 521, assets/sass/_layout.scss */
+/* line 533, assets/sass/_layout.scss */
 .landing-block h3.landing-subtitle {
   font-weight: bold;
   font-size: 14px;
@@ -1257,31 +1268,36 @@ a.rslides_nav.next {
   border-bottom: 4px solid black;
   margin-bottom: 10px;
 }
+/* line 544, assets/sass/_layout.scss */
+.landing-block a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
 
 /* FOOTER Styles
 ================================================== */
-/* line 544, assets/sass/_layout.scss */
+/* line 561, assets/sass/_layout.scss */
 .instagram {
   margin-top: 55px;
   margin-bottom: 30px;
 }
-/* line 547, assets/sass/_layout.scss */
+/* line 564, assets/sass/_layout.scss */
 .instagram h6 {
   padding-bottom: 16px;
 }
-/* line 548, assets/sass/_layout.scss */
+/* line 565, assets/sass/_layout.scss */
 .instagram img {
   width: 145px;
   margin-bottom: 30px;
 }
 
-/* line 552, assets/sass/_layout.scss */
+/* line 569, assets/sass/_layout.scss */
 footer {
   width: 100%;
   background: black;
   padding: 30px 0 20px 0;
 }
-/* line 559, assets/sass/_layout.scss */
+/* line 576, assets/sass/_layout.scss */
 footer .footer-menu ul > li {
   display: inline;
   float: left;
@@ -1292,21 +1308,21 @@ footer .footer-menu ul > li {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-/* line 568, assets/sass/_layout.scss */
+/* line 585, assets/sass/_layout.scss */
 footer .footer-menu ul > li a {
   color: white;
 }
-/* line 570, assets/sass/_layout.scss */
+/* line 587, assets/sass/_layout.scss */
 footer .footer-menu ul > li a:hover {
   color: #d1202f;
 }
-/* line 573, assets/sass/_layout.scss */
+/* line 590, assets/sass/_layout.scss */
 footer .footer-menu ul > li ul {
   width: 120px;
   padding-left: 0;
   margin: 0;
 }
-/* line 577, assets/sass/_layout.scss */
+/* line 594, assets/sass/_layout.scss */
 footer .footer-menu ul > li ul li {
   display: block;
   width: 100%;
@@ -1314,28 +1330,28 @@ footer .footer-menu ul > li ul li {
   padding: 5px 0px 0px 0px;
   text-transform: none;
 }
-/* line 590, assets/sass/_layout.scss */
+/* line 607, assets/sass/_layout.scss */
 footer .credits {
   font-size: 11px;
   line-height: 1.636;
   letter-spacing: 0.05em;
   color: white;
 }
-/* line 596, assets/sass/_layout.scss */
+/* line 613, assets/sass/_layout.scss */
 footer .footer-social {
   padding-bottom: 19px;
 }
-/* line 597, assets/sass/_layout.scss */
+/* line 614, assets/sass/_layout.scss */
 footer .footer-social a {
   color: white;
   padding-left: 8px;
   font-size: 14px;
 }
-/* line 599, assets/sass/_layout.scss */
+/* line 616, assets/sass/_layout.scss */
 footer .footer-social a:hover {
   color: #d1202f;
 }
-/* line 605, assets/sass/_layout.scss */
+/* line 622, assets/sass/_layout.scss */
 footer span.hayworth {
   position: relative;
   top: 95px;

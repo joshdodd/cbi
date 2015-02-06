@@ -64,11 +64,16 @@ header{
 			}
 		}
 		a.hover{color: $red;}
-		&.current-menu-item{
+		&.current-menu-item a{ 
 			background-color: $white;
-			a{
-				color: $black;
+			color: $black;
+			display: inline;
+			&:hover{
+				@include opacity(1);
+				color: $red;
+
 			}
+ 
 		}
 	}
 	
@@ -224,8 +229,15 @@ header{
 	.home-borders-content{
 		margin-top: 10px;
 		margin-bottom: 10px;
+		width: 273px;
 		img{margin:0; padding: 0;}
 		p{margin:0}
+		display: inline;
+		float:left;
+		&.right{
+			margin-left: 24px;
+
+		}
 	}
 
 }
@@ -528,6 +540,11 @@ a.rslides_nav{
 		border-bottom: 4px solid black;
 		margin-bottom: 10px;
 	}
+	 
+	a:hover{
+		@include opacity(1);
+	}
+	 
 }
 
 
