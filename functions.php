@@ -4,6 +4,7 @@ function loadup_scripts() {
 	wp_enqueue_script( 'theme-js', get_template_directory_uri().'/assets/js/cbi.js', array('jquery'), '1.0.0', true );
  
     wp_enqueue_script('slider', get_template_directory_uri() . '/assets/libs/responsiveslides.js', array(), false, true ); 
+    
 }
 add_action( 'wp_enqueue_scripts', 'loadup_scripts' );
 
