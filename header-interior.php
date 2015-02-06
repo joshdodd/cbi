@@ -1,5 +1,5 @@
 <header class="interior"> 
-	<div class="container">
+	<div class="container-header">
 		<div class="five columns interior-menu">
 			<div class="logo">
 				 <div class="logo-block">

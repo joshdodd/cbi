@@ -425,174 +425,186 @@ li {
 /* #Base 960 Grid
 ================================================== */
 /* line 54, assets/sass/_grid.scss */
-.container {
+.container, .container-header {
   position: relative;
-  margin: 0;
-  padding: 0 0 0 100px;
+  margin: 0 auto;
   width: 1020px;
   /* Offsets */
 }
-/* line 57, assets/sass/_grid.scss */
-.container .row {
+@media only screen and (max-width: 1240px) {
+  /* line 54, assets/sass/_grid.scss */
+  .container, .container-header {
+    margin: 0;
+    padding: 0 0 0 100px;
+  }
+}
+/* line 60, assets/sass/_grid.scss */
+.container .row, .container-header .row {
   margin-bottom: 20px;
 }
-/* line 58, assets/sass/_grid.scss */
-.container .column, .container .columns {
+/* line 61, assets/sass/_grid.scss */
+.container .column, .container .columns, .container-header .column, .container-header .columns {
   float: left;
   display: inline;
   margin-left: 12.5px;
   margin-right: 12.5px;
   /* Base Grid */
 }
-/* line 64, assets/sass/_grid.scss */
-.container .column.alpha, .container .columns.alpha {
+/* line 67, assets/sass/_grid.scss */
+.container .column.alpha, .container .columns.alpha, .container-header .column.alpha, .container-header .columns.alpha {
   margin-left: 0;
 }
-/* line 65, assets/sass/_grid.scss */
-.container .column.omega, .container .columns.omega {
+/* line 68, assets/sass/_grid.scss */
+.container .column.omega, .container .columns.omega, .container-header .column.omega, .container-header .columns.omega {
   margin-right: 0;
 }
-/* line 68, assets/sass/_grid.scss */
-.container .column.one, .container .columns.one {
+/* line 71, assets/sass/_grid.scss */
+.container .column.one, .container .columns.one, .container-header .column.one, .container-header .columns.one {
   width: 60px;
 }
-/* line 69, assets/sass/_grid.scss */
-.container .column.two, .container .columns.two {
+/* line 72, assets/sass/_grid.scss */
+.container .column.two, .container .columns.two, .container-header .column.two, .container-header .columns.two {
   width: 145px;
 }
-/* line 70, assets/sass/_grid.scss */
-.container .column.three, .container .columns.three {
+/* line 73, assets/sass/_grid.scss */
+.container .column.three, .container .columns.three, .container-header .column.three, .container-header .columns.three {
   width: 230px;
 }
-/* line 71, assets/sass/_grid.scss */
-.container .column.four, .container .columns.four {
-  width: 315px;
-}
-/* line 72, assets/sass/_grid.scss */
-.container .column.five, .container .columns.five {
-  width: 400px;
-}
-/* line 73, assets/sass/_grid.scss */
-.container .column.six, .container .columns.six {
-  width: 485px;
-}
 /* line 74, assets/sass/_grid.scss */
-.container .column.seven, .container .columns.seven {
-  width: 570px;
+.container .column.four, .container .columns.four, .container-header .column.four, .container-header .columns.four {
+  width: 315px;
 }
 /* line 75, assets/sass/_grid.scss */
-.container .column.eight, .container .columns.eight {
-  width: 655px;
+.container .column.five, .container .columns.five, .container-header .column.five, .container-header .columns.five {
+  width: 400px;
 }
 /* line 76, assets/sass/_grid.scss */
-.container .column.nine, .container .columns.nine {
-  width: 740px;
+.container .column.six, .container .columns.six, .container-header .column.six, .container-header .columns.six {
+  width: 485px;
 }
 /* line 77, assets/sass/_grid.scss */
-.container .column.ten, .container .columns.ten {
-  width: 825px;
+.container .column.seven, .container .columns.seven, .container-header .column.seven, .container-header .columns.seven {
+  width: 570px;
 }
 /* line 78, assets/sass/_grid.scss */
-.container .column.eleven, .container .columns.eleven {
-  width: 910px;
-}
-/* line 79, assets/sass/_grid.scss */
-.container .column.twelve, .container .columns.twelve {
-  width: 995px;
-}
-/* line 80, assets/sass/_grid.scss */
-.container .column.thirteen, .container .columns.thirteen {
-  width: 1080px;
-}
-/* line 81, assets/sass/_grid.scss */
-.container .column.fourteen, .container .columns.fourteen {
-  width: 1165px;
-}
-/* line 82, assets/sass/_grid.scss */
-.container .column.fifteen, .container .columns.fifteen {
-  width: 1250px;
-}
-/* line 83, assets/sass/_grid.scss */
-.container .column.sixteen, .container .columns.sixteen {
-  width: 1335px;
-}
-/* line 85, assets/sass/_grid.scss */
-.container .column.one-third, .container .columns.one-third {
-  width: 315px;
-}
-/* line 86, assets/sass/_grid.scss */
-.container .column.two-thirds, .container .columns.two-thirds {
+.container .column.eight, .container .columns.eight, .container-header .column.eight, .container-header .columns.eight {
   width: 655px;
 }
-/* line 90, assets/sass/_grid.scss */
-.container .column img, .container .columns img {
-  max-width: 100%;
+/* line 79, assets/sass/_grid.scss */
+.container .column.nine, .container .columns.nine, .container-header .column.nine, .container-header .columns.nine {
+  width: 740px;
+}
+/* line 80, assets/sass/_grid.scss */
+.container .column.ten, .container .columns.ten, .container-header .column.ten, .container-header .columns.ten {
+  width: 825px;
+}
+/* line 81, assets/sass/_grid.scss */
+.container .column.eleven, .container .columns.eleven, .container-header .column.eleven, .container-header .columns.eleven {
+  width: 910px;
+}
+/* line 82, assets/sass/_grid.scss */
+.container .column.twelve, .container .columns.twelve, .container-header .column.twelve, .container-header .columns.twelve {
+  width: 995px;
+}
+/* line 83, assets/sass/_grid.scss */
+.container .column.thirteen, .container .columns.thirteen, .container-header .column.thirteen, .container-header .columns.thirteen {
+  width: 1080px;
+}
+/* line 84, assets/sass/_grid.scss */
+.container .column.fourteen, .container .columns.fourteen, .container-header .column.fourteen, .container-header .columns.fourteen {
+  width: 1165px;
+}
+/* line 85, assets/sass/_grid.scss */
+.container .column.fifteen, .container .columns.fifteen, .container-header .column.fifteen, .container-header .columns.fifteen {
+  width: 1250px;
+}
+/* line 86, assets/sass/_grid.scss */
+.container .column.sixteen, .container .columns.sixteen, .container-header .column.sixteen, .container-header .columns.sixteen {
+  width: 1335px;
+}
+/* line 88, assets/sass/_grid.scss */
+.container .column.one-third, .container .columns.one-third, .container-header .column.one-third, .container-header .columns.one-third {
+  width: 315px;
+}
+/* line 89, assets/sass/_grid.scss */
+.container .column.two-thirds, .container .columns.two-thirds, .container-header .column.two-thirds, .container-header .columns.two-thirds {
+  width: 655px;
 }
 /* line 93, assets/sass/_grid.scss */
-.container .offset-by-one {
-  padding-left: 85px;
-}
-/* line 94, assets/sass/_grid.scss */
-.container .offset-by-two {
-  padding-left: 170px;
-}
-/* line 95, assets/sass/_grid.scss */
-.container .offset-by-three {
-  padding-left: 255px;
+.container .column img, .container .columns img, .container-header .column img, .container-header .columns img {
+  max-width: 100%;
 }
 /* line 96, assets/sass/_grid.scss */
-.container .offset-by-four {
-  padding-left: 340px;
+.container .offset-by-one, .container-header .offset-by-one {
+  padding-left: 85px;
 }
 /* line 97, assets/sass/_grid.scss */
-.container .offset-by-five {
-  padding-left: 425px;
+.container .offset-by-two, .container-header .offset-by-two {
+  padding-left: 170px;
 }
 /* line 98, assets/sass/_grid.scss */
-.container .offset-by-six {
-  padding-left: 510px;
+.container .offset-by-three, .container-header .offset-by-three {
+  padding-left: 255px;
 }
 /* line 99, assets/sass/_grid.scss */
-.container .offset-by-seven {
-  padding-left: 595px;
+.container .offset-by-four, .container-header .offset-by-four {
+  padding-left: 340px;
 }
 /* line 100, assets/sass/_grid.scss */
-.container .offset-by-eight {
-  padding-left: 680px;
+.container .offset-by-five, .container-header .offset-by-five {
+  padding-left: 425px;
 }
 /* line 101, assets/sass/_grid.scss */
-.container .offset-by-nine {
-  padding-left: 765px;
+.container .offset-by-six, .container-header .offset-by-six {
+  padding-left: 510px;
 }
 /* line 102, assets/sass/_grid.scss */
-.container .offset-by-ten {
-  padding-left: 850px;
+.container .offset-by-seven, .container-header .offset-by-seven {
+  padding-left: 595px;
 }
 /* line 103, assets/sass/_grid.scss */
-.container .offset-by-eleven {
-  padding-left: 935px;
+.container .offset-by-eight, .container-header .offset-by-eight {
+  padding-left: 680px;
 }
 /* line 104, assets/sass/_grid.scss */
-.container .offset-by-twelve {
-  padding-left: 1020px;
+.container .offset-by-nine, .container-header .offset-by-nine {
+  padding-left: 765px;
 }
 /* line 105, assets/sass/_grid.scss */
-.container .offset-by-thirteen {
-  padding-left: 1105px;
+.container .offset-by-ten, .container-header .offset-by-ten {
+  padding-left: 850px;
 }
 /* line 106, assets/sass/_grid.scss */
-.container .offset-by-fourteen {
-  padding-left: 1190px;
+.container .offset-by-eleven, .container-header .offset-by-eleven {
+  padding-left: 935px;
 }
 /* line 107, assets/sass/_grid.scss */
-.container .offset-by-fifteen {
+.container .offset-by-twelve, .container-header .offset-by-twelve {
+  padding-left: 1020px;
+}
+/* line 108, assets/sass/_grid.scss */
+.container .offset-by-thirteen, .container-header .offset-by-thirteen {
+  padding-left: 1105px;
+}
+/* line 109, assets/sass/_grid.scss */
+.container .offset-by-fourteen, .container-header .offset-by-fourteen {
+  padding-left: 1190px;
+}
+/* line 110, assets/sass/_grid.scss */
+.container .offset-by-fifteen, .container-header .offset-by-fifteen {
   padding-left: 1275px;
+}
+
+/* line 112, assets/sass/_grid.scss */
+.container-header {
+  margin: 0;
+  padding: 0 0 0 100px;
 }
 
 /* #Clearing
 ================================================== */
 /* Self Clearing Goodness */
-/* line 115, assets/sass/_grid.scss */
+/* line 120, assets/sass/_grid.scss */
 .container:after {
   content: "\0020";
   display: block;
@@ -603,7 +615,7 @@ li {
 
 /* Use clearfix class on parent to clear nested columns,
 or wrap each row of columns in a <div class="row"> */
-/* line 122, assets/sass/_grid.scss */
+/* line 127, assets/sass/_grid.scss */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -616,20 +628,20 @@ or wrap each row of columns in a <div class="row"> */
   height: 0;
 }
 
-/* line 130, assets/sass/_grid.scss */
+/* line 135, assets/sass/_grid.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 133, assets/sass/_grid.scss */
+/* line 138, assets/sass/_grid.scss */
 .row,
 .clearfix {
   zoom: 1;
 }
 
 /* You can also use a <br class="clear" /> to clear columns */
-/* line 137, assets/sass/_grid.scss */
+/* line 142, assets/sass/_grid.scss */
 .clear {
   clear: both;
   display: block;

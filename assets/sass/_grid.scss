@@ -51,8 +51,11 @@ $sk-col-count:  12;     //total column count
 /* #Base 960 Grid
 ================================================== */
 
-    .container { position: relative; margin: 0; padding: 0 0 0 100px;
+    .container, .container-header { position: relative; margin: 0 auto; 
                                       @include grid-width();
+                                      @media only screen and (max-width: 1240px) {
+                                        margin: 0; padding: 0 0 0 100px;
+                                    }
 
         .row                        { margin-bottom: 20px; }
         .column, .columns           { float: left;
@@ -106,7 +109,9 @@ $sk-col-count:  12;     //total column count
         .offset-by-fourteen          { @include column-offset(14); }
         .offset-by-fifteen           { @include column-offset(15); }
     } //.container
-
+    .container-header{
+        margin: 0; padding: 0 0 0 100px;
+    }
 
 /* #Clearing
 ================================================== */

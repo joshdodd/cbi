@@ -1,5 +1,5 @@
 <header class="home">
-	<div class="container">
+	<div class="container-header">
 
 		<div class="five columns">
 			<div class="logo">
