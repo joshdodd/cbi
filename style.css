@@ -731,13 +731,13 @@ header.interior .interior-menu {
   color: #d1202f;
 }
 /* line 67, assets/sass/_layout.scss */
-.main-navigation ul li.current-menu-item a {
+.main-navigation ul li.current-menu-item a, .main-navigation ul li.current-page-ancestor a {
   background-color: white;
   color: black;
   display: inline;
 }
 /* line 71, assets/sass/_layout.scss */
-.main-navigation ul li.current-menu-item a:hover {
+.main-navigation ul li.current-menu-item a:hover, .main-navigation ul li.current-page-ancestor a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   color: #d1202f;

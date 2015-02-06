@@ -64,7 +64,7 @@ header{
 			}
 		}
 		a.hover{color: $red;}
-		&.current-menu-item a{ 
+		&.current-menu-item a, &.current-page-ancestor a{ 
 			background-color: $white;
 			color: $black;
 			display: inline;
