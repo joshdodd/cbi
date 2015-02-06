@@ -21,9 +21,9 @@
         }, l);
         return this.each(function () {
             B++;
-            var ww = window.innerWidth;
-            if (ww<1240) ww = 1240;
-            if(location.pathname != "/") ww = 655;
+            var width = window.innerWidth;
+            if (width<1240) width = 1240;
+            if(location.pathname != "/") width = 655;
             var f = c(this),
                 s, r, t, m, p, q, n = 0,
                 e = f.children(),
@@ -47,7 +47,7 @@
                 y = {
                     "float": "left",
                     position: "absolute",
-                    left: "-"+ww+"px",
+                    left: "-"+width+"px",
                  
                 },
                 F = function () {
