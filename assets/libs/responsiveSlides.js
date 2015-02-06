@@ -22,8 +22,8 @@
         return this.each(function () {
             B++;
             var width = window.innerWidth;
-            if (width<1240) width = 1240;
-            if(location.pathname != "/") width = 655;
+            if (width<1240) width = "-1240px";
+            if(location.pathname != "/") width = "-100%";
             console.log(location.pathname);
             console.log(width);
             var f = c(this),
@@ -49,7 +49,7 @@
                 y = {
                     "float": "left",
                     position: "absolute",
-                    left: "-"+width+"px",
+                    left: width,
                  
                 },
                 F = function () {
