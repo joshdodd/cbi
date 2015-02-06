@@ -23,7 +23,7 @@
             B++;
             var width = window.innerWidth;
             if (width<1240) width = "-1240px";
-            if(location.pathname != "/") width = "-100%";
+            if(location.pathname != "/") width = "-700px";
             console.log(location.pathname);
             console.log(width);
             var f = c(this),

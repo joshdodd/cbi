@@ -1182,27 +1182,20 @@ header.interior .interior-menu {
   -webkit-backface-visibility: hidden;
   position: absolute;
   display: none;
-  width: 100%;
+  width: 655px;
   left: 0;
   top: 0;
   z-index: 1;
 }
-@media only screen and (max-width: 1240px) {
-  /* line 469, assets/sass/_layout.scss */
-  .page-slides li {
-    width: 1240px;
-    height: 800px;
-  }
-}
 
-/* line 483, assets/sass/_layout.scss */
+/* line 480, assets/sass/_layout.scss */
 .page-slides li:first-child {
   position: relative;
   display: block;
   float: left;
 }
 
-/* line 489, assets/sass/_layout.scss */
+/* line 486, assets/sass/_layout.scss */
 .page-slides img {
   display: block;
   height: auto;
@@ -1211,7 +1204,7 @@ header.interior .interior-menu {
   border: 0;
 }
 
-/* line 497, assets/sass/_layout.scss */
+/* line 494, assets/sass/_layout.scss */
 ul.rslides_tabs {
   list-style-type: none;
   width: 600px;
@@ -1219,57 +1212,57 @@ ul.rslides_tabs {
   top: -85px;
   text-align: center;
 }
-/* line 505, assets/sass/_layout.scss */
+/* line 502, assets/sass/_layout.scss */
 ul.rslides_tabs li {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 511, assets/sass/_layout.scss */
+/* line 508, assets/sass/_layout.scss */
 ul.rslides_tabs li a {
   color: black;
 }
-/* line 513, assets/sass/_layout.scss */
+/* line 510, assets/sass/_layout.scss */
 ul.rslides_tabs li a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 516, assets/sass/_layout.scss */
+/* line 513, assets/sass/_layout.scss */
 ul.rslides_tabs li.rslides_here a {
   color: #d1202f;
 }
-/* line 518, assets/sass/_layout.scss */
+/* line 515, assets/sass/_layout.scss */
 ul.rslides_tabs li.rslides_here a:hover, ul.rslides_tabs li.rslides_here a:focus, ul.rslides_tabs li.rslides_here a:active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 523, assets/sass/_layout.scss */
+/* line 520, assets/sass/_layout.scss */
 a.rslides_nav {
   color: black;
   font-size: 40px;
 }
-/* line 525, assets/sass/_layout.scss */
+/* line 522, assets/sass/_layout.scss */
 a.rslides_nav:hover {
   color: #d1202f;
 }
-/* line 527, assets/sass/_layout.scss */
+/* line 524, assets/sass/_layout.scss */
 a.rslides_nav.prev {
   position: relative;
   top: -220px;
   left: 20px;
 }
-/* line 528, assets/sass/_layout.scss */
+/* line 525, assets/sass/_layout.scss */
 a.rslides_nav.next {
   position: relative;
   top: -220px;
   left: 600px;
 }
 
-/* line 531, assets/sass/_layout.scss */
+/* line 528, assets/sass/_layout.scss */
 .landing-block {
   margin-bottom: 25px;
 }
-/* line 533, assets/sass/_layout.scss */
+/* line 530, assets/sass/_layout.scss */
 .landing-block h3.landing-subtitle {
   font-weight: bold;
   font-size: 14px;
@@ -1280,7 +1273,7 @@ a.rslides_nav.next {
   border-bottom: 4px solid black;
   margin-bottom: 10px;
 }
-/* line 544, assets/sass/_layout.scss */
+/* line 541, assets/sass/_layout.scss */
 .landing-block a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -1288,28 +1281,28 @@ a.rslides_nav.next {
 
 /* FOOTER Styles
 ================================================== */
-/* line 561, assets/sass/_layout.scss */
+/* line 558, assets/sass/_layout.scss */
 .instagram {
   margin-top: 55px;
   margin-bottom: 30px;
 }
-/* line 564, assets/sass/_layout.scss */
+/* line 561, assets/sass/_layout.scss */
 .instagram h6 {
   padding-bottom: 16px;
 }
-/* line 565, assets/sass/_layout.scss */
+/* line 562, assets/sass/_layout.scss */
 .instagram img {
   width: 145px;
   margin-bottom: 30px;
 }
 
-/* line 569, assets/sass/_layout.scss */
+/* line 566, assets/sass/_layout.scss */
 footer {
   width: 100%;
   background: black;
   padding: 30px 0 20px 0;
 }
-/* line 576, assets/sass/_layout.scss */
+/* line 573, assets/sass/_layout.scss */
 footer .footer-menu ul > li {
   display: inline;
   float: left;
@@ -1320,21 +1313,21 @@ footer .footer-menu ul > li {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-/* line 585, assets/sass/_layout.scss */
+/* line 582, assets/sass/_layout.scss */
 footer .footer-menu ul > li a {
   color: white;
 }
-/* line 587, assets/sass/_layout.scss */
+/* line 584, assets/sass/_layout.scss */
 footer .footer-menu ul > li a:hover {
   color: #d1202f;
 }
-/* line 590, assets/sass/_layout.scss */
+/* line 587, assets/sass/_layout.scss */
 footer .footer-menu ul > li ul {
   width: 120px;
   padding-left: 0;
   margin: 0;
 }
-/* line 594, assets/sass/_layout.scss */
+/* line 591, assets/sass/_layout.scss */
 footer .footer-menu ul > li ul li {
   display: block;
   width: 100%;
@@ -1342,28 +1335,28 @@ footer .footer-menu ul > li ul li {
   padding: 5px 0px 0px 0px;
   text-transform: none;
 }
-/* line 607, assets/sass/_layout.scss */
+/* line 604, assets/sass/_layout.scss */
 footer .credits {
   font-size: 11px;
   line-height: 1.636;
   letter-spacing: 0.05em;
   color: white;
 }
-/* line 613, assets/sass/_layout.scss */
+/* line 610, assets/sass/_layout.scss */
 footer .footer-social {
   padding-bottom: 19px;
 }
-/* line 614, assets/sass/_layout.scss */
+/* line 611, assets/sass/_layout.scss */
 footer .footer-social a {
   color: white;
   padding-left: 8px;
   font-size: 14px;
 }
-/* line 616, assets/sass/_layout.scss */
+/* line 613, assets/sass/_layout.scss */
 footer .footer-social a:hover {
   color: #d1202f;
 }
-/* line 622, assets/sass/_layout.scss */
+/* line 619, assets/sass/_layout.scss */
 footer span.hayworth {
   position: relative;
   top: 95px;

@@ -470,14 +470,11 @@ header{
 	-webkit-backface-visibility: hidden;
 	position: absolute;
 	display: none;
-	width: 100%;
+	width: 655px;
 	left: 0;
 	top: 0;
 	z-index: 1;
-	@media only screen and (max-width: 1240px) {
-		width: 1240px;
-		height: 800px;
-	}
+ 
 }
 
 .page-slides li:first-child  {
