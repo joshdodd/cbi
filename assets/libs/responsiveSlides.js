@@ -21,6 +21,9 @@
         }, l);
         return this.each(function () {
             B++;
+            var ww = window.innerWidth;
+            if (ww<1240) ww = 1240;
+            if(location.pathname != "/") ww = 655;
             var f = c(this),
                 s, r, t, m, p, q, n = 0,
                 e = f.children(),
@@ -37,15 +40,15 @@
                 k = c("<ul class='" + g + "_tabs " + d + "_tabs' />"),
                 x = {
                     "float": "left",
-                    position: "relative",
-                    opacity: 1,
-                    zIndex: 2
+                    position: "absolute",
+                    left: "0px",
+                    
                 },
                 y = {
-                    "float": "none",
+                    "float": "left",
                     position: "absolute",
-                    opacity: 0,
-                    zIndex: 1
+                    left: "-"+ww+"px",
+                 
                 },
                 F = function () {
                     var b = (document.body || document.documentElement).style,
@@ -81,11 +84,11 @@
             l && l.maxwidth && f.css("max-width", u);
             e.hide().css(y).eq(0).addClass(j).css(x).show();
             F && e.show().css({
-                "-webkit-transition": "opacity " + h + "ms ease-in-out",
-                "-moz-transition": "opacity " +
+                "-webkit-transition": "" + h + "ms ease-in-out",
+                "-moz-transition": "" +
                     h + "ms ease-in-out",
-                "-o-transition": "opacity " + h + "ms ease-in-out",
-                transition: "opacity " + h + "ms ease-in-out"
+                "-o-transition": "" + h + "ms ease-in-out",
+                transition: "" + h + "ms ease-in-out"
             });
             if (1 < e.size()) {
                 if (D < h + 100) return;

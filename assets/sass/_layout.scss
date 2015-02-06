@@ -94,47 +94,88 @@ header{
 
 /* Homepage Slides
 ================================================== */
-.rslides, .homeslides {
-	position: absolute;
-	list-style: none;
-	overflow: hidden;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	z-index: -1;
-	height: 800px;
-	top: 0px;
-}
+.slider{
 
-.rslides li, .homeslides li {
-	-webkit-backface-visibility: hidden;
-	position: absolute;
-	display: none;
-	width: 100%;
-	left: 0;
-	top: 0;
-	z-index: 1;
-	@media only screen and (max-width: 1240px) {
-		width: 1240px;
+	.rslides, .homeslides {
+		position: absolute;
+		list-style: none;
+		overflow: hidden;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		z-index: -1;
 		height: 800px;
+		top: 0px;
 	}
-}
 
-.rslides li:first-child, .homeslides li:first-child  {
-	position: relative;
-	display: block;
-	float: left;
-}
+	.rslides li, .homeslides li {
+		-webkit-backface-visibility: hidden;
+		position: absolute;
+		display: none;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		@media only screen and (max-width: 1240px) {
+			width: 1240px;
+			height: 800px;
+		}
+	}
 
-.rslides img , .homeslides img{
-	display: block;
-	height: auto;
-	float: left;
-	width: 100%;
-	border: 0;
-	@media only screen and (max-width: 1240px) {
-		width: 1240px;
-		height: 800px;
+	.rslides li:first-child, .homeslides li:first-child  {
+		position: relative;
+		display: block;
+		float: left;
+	}
+
+	.rslides img , .homeslides img{
+		display: block;
+		height: auto;
+		float: left;
+		width: 100%;
+		border: 0;
+		@media only screen and (max-width: 1240px) {
+			width: 1240px;
+			height: 800px;
+		}
+
+	}
+
+
+	ul.rslides_tabs {
+		list-style-type: none;
+		width: 600px;
+		position: relative;
+		top: -55px;
+		margin: 0 auto;
+		z-index: 5;
+	 
+		text-align:center;
+
+		li{
+			 display:inline-block;
+	 
+			margin-right: 20px;
+
+
+			a{
+				color: $black;
+				&:hover{@include opacity(1);}
+			}
+
+			&.rslides_here a{
+				color: $red;
+				&:hover, &:focus, &:active{@include opacity(1);}
+			}
+		}
+	}
+
+	a.rslides_nav{
+		color: $black;
+		&:hover{color: $red;} 
+		font-size: 40px;
+		&.prev{position: absolute; top: 730px; left: 10%;  }
+		&.next{position: absolute; top: 730px; left: 90%; }
 	}
 
 }
@@ -395,7 +436,7 @@ header{
 
 }
 
-/* PAGE Styles
+/* PAGE Slider
 ================================================== */
 .page-slider{
 	margin-bottom: -40px;

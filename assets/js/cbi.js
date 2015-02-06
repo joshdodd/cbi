@@ -4,7 +4,11 @@ jQuery(document).ready(function($){
 	$(".homeslides").responsiveSlides({
 		auto: true,             // Boolean: Animate automatically, true or false
 		speed: 500,            // Integer: Speed of the transition, in milliseconds
-		timeout: 5000,          // Integer: Time between slide transitions, in milliseconds
+		timeout: 3000,          // Integer: Time between slide transitions, in milliseconds
+			pager: true,           // Boolean: Show pager, true or false
+		nav: true,             // Boolean: Show navigation, true or false
+		prevText: "<i class='fa fa-angle-left'></i>",   // String: Text for the "previous" button
+		nextText: "<i class='fa fa-angle-right'></i>",       // String: Text for the "next" button
 
 	});
 
