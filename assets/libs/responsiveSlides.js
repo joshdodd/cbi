@@ -24,6 +24,8 @@
             var width = window.innerWidth;
             if (width<1240) width = 1240;
             if(location.pathname != "/") width = 655;
+            console.log(location.pathname);
+            console.log(width);
             var f = c(this),
                 s, r, t, m, p, q, n = 0,
                 e = f.children(),
